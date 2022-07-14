@@ -739,7 +739,7 @@
                 width: 82px;
             }
             .logo-lg img{
-                width: 111px;
+                width: 95px;
             }
             
             table.logs-table tr td:last-child {
@@ -762,11 +762,13 @@
             }
             
             body[data-sidebar=dark] .navbar-brand-box {
-                background: #1a1919;
+                background: #1c2023;
+                background: #212529;
             }
             
             body[data-sidebar=dark] .vertical-menu {
-                background: #212121;
+                background: #212529;
+                background: #1c2023;
             }
             
             .navbar-brand-box .logo-sm {

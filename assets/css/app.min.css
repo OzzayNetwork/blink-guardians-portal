@@ -144,7 +144,7 @@
     padding: 15px 0 9px;
     display: block;
     border: 1px solid transparent;
-    color: #74788d
+    color: #989da0;
 }
 
 .dropdown-icon-item img {
@@ -698,11 +698,11 @@ body[data-sidebar=dark] .vertical-menu {
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a {
-    color: #a6b0cf
+    color: #989da0
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a i {
-    color: #6a7187
+    color: #989da0
 }
 
 body[data-sidebar=dark] #sidebar-menu ul li a:hover {
@@ -727,6 +727,7 @@ body[data-sidebar=dark].vertical-collpsed {
 
 body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
     background: #2e3548;
+    /* background: #212529; */
     color: #fff
 }
 
