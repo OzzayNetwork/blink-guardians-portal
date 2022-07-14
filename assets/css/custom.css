@@ -1031,6 +1031,18 @@
             .w-220px {
                 width: 220px !important;
             }
+            .auth-full-bg {
+                background-color: rgb(85 110 230) !important;
+            }
+            .auth-full-bg .bg-overlay::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to right, rgb(247 89 12 / 23%) 0%, rgb(18 13 12 / 50%) 100%)
+            }
             
             @media (max-width: 576px) {
                 .the-msg-2 {
@@ -1062,6 +1074,7 @@
                 .card {
                     border-radius: 0px;
                 }
+                
                 .page-title-box {
                     padding-right: 20px;
                     padding-left: 20px;
