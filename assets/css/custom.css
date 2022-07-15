@@ -1123,3 +1123,25 @@
             .absolute-right-auto{
                 right: auto !important;
             }
+            .bg-primary-blink{
+                background-color: #ec5b0e !important;
+            }
+            .expenditure-card{
+                height: calc(100% - 23px);
+            }
+            .history-card{
+                height: 461px;
+            }
+            #chartContainer .apexcharts-tooltip {
+                color: #000000;
+              }
+              
+              #member-salary-chart .apexcharts-tooltip .apexcharts-tooltip-series-group.active {
+                background: #ffffff !important;
+              }
+              .apexcharts-tooltip.light{    
+                background:red;
+                color:green;    
+                }
+                #member-salary-chart .apexcharts-tooltip { 
+                    background: white;} ...

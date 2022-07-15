@@ -63,7 +63,7 @@ var walletOptions = {
 //Bunndle usage monthly summary
 var options = {
         chart: {
-            height: 360,
+            height: 420,
             type: "bar",
             stacked: !1,
             toolbar: {
@@ -101,18 +101,18 @@ var options = {
 
             },
             title: {
-                text: "Messages Sent",
+                text: "Amount Used in KES",
             }
         },
         series: [{
-                name: "SMS",
+                name: "Alex Wanjala",
                 data: [4023658, 5123456, 41458975, 67123654, 22123654, 43789654, 36789623, 52320365, 24023147, 18012586, 36036985, 48025820]
             }, {
-                name: "Emails",
+                name: "Kelvin Mutuko",
                 data: [13025856, 23025632, 20032145, 8021457, 13032568, 27456987, 18235897, 22235789, 10213214, 16365478, 24456987, 22123568]
             },
             {
-                name: "WhatsApp",
+                name: "Brian Mutinda",
                 data: [1325856, 2325632, 2032145, 802147, 1303268, 27456987, 1823897, 2223789, 1013214, 1636478, 2445987, 2213568]
             }
         ],
@@ -172,11 +172,12 @@ var options = {
             enabled: true,
             enabledOnSeries: undefined,
             shared: true,
-            followCursor: false,
+            followCursor: true,
             intersect: false,
             inverseOrder: false,
             custom: undefined,
             fillSeriesColor: false,
+            fillColor:'white',
             theme: false,
             style: {
                 fontSize: '12px',
@@ -197,7 +198,7 @@ var options = {
                     series.forEach((s) => {
                         currentTotal += s[dataPointIndex]
                     })
-                    return "<span class='text-right' > " + numeral(value).format('0,0') + "Sent</span> "
+                    return "<span class='text-right' >KES " + numeral(value).format('0,0') + "</span> "
 
                 }
             }
