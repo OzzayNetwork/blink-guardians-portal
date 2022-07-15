@@ -238,12 +238,13 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="side-bar-button">
-                            <a href="#" class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
+                        <li class="side-bar-button" >
+                            <a href="#" class="waves-effect btn btn-light btn-rounded text-left write-msg-btn" data-bs-toggle="modal" data-bs-target="#walletTopUp">
                                 <i class=""><img src="assets/images/plus-icon.svg" alt=""></i>
                                 <span class="text-capitalize">Send Money</span>
                             </a>
                         </li>
+                        
                         
 
                         <li>
@@ -304,6 +305,169 @@
             </div>
         </div>
         <!-- Left Sidebar End -->
+
+        <!-- wallet top up modal -->
+        <!-- Modal -->
+            <div class="modal fade" id="walletTopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-none">
+                        <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Send Money</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge  badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Send Money</span>
+                       
+                            
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right" data-bs-dismiss="modal" aria-label="Close">
+                            <span class="avatar-title bg-transparent text-reset font-18px">
+                                <i class="bx bx-x"></i>
+                            </span>
+                        </button>
+                        </div>
+                        <div>
+                            <h4 class="text-capitalize">Recepient, Blink account & Amount </h4>
+                            <label class="text-capitalize text-muted">Blinker receiving the money</label>
+                            
+                            <div>
+                                
+                                <div class="dropdown d-inline-block w-100 d-flex align-items-center mb-4 bg-info bg-opacity-25">
+                                    <button type="button" class="btn header-item waves-effect align-items-center w-100  text-left d-flex" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img class="rounded-circle avatar-sm" src="assets/images/users/avatar-5.jpg" alt="Generic placeholder image" height="65">
+                                        </div>
+                                        
+                                        <div class="flex-grow-1 chat-user-box me-3">
+                                            <h6 class="user-title m-0">Kelvin Thuku </h6>
+                                            <p class="text-muted m-0 p-0">Blink Academy</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="d-flex align-items-center"><small class="text-info mr-2">Click to change</small> <i class="mdi mdi-chevron-down  d-xl-inline-block me-3 font-21"></i></span>
+                                        </div>
+                                        
+                                    </button>
+
+                                    
+                                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-start p-0">
+                                        <div class="p-3">
+                                            <div class="row align-items-center">
+                                                <div class="col">
+                                                    <h6 class="m-0" key="t-notifications"> My Blinkers </h6>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="notifications.html" class="small" key="t-view-all"> View All</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-simplebar style="max-height: 230px;">
+                                            <a href="javascript: void(0);" class="d-flex px-3 pb-2">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <img class="rounded-circle" src="assets/images/users/avatar-1.jpg" alt="Generic placeholder image" height="36">
+                                                </div>
+                                                <div class="flex-grow-1 chat-user-box">
+                                                    <p class="user-title m-0">Alex wankala</p>
+                                                    <p class="text-muted">St Mary's primary school</p>
+                                                </div>                                                            
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="d-flex px-3 pb-2">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <img class="rounded-circle" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="36">
+                                                </div>
+                                                <div class="flex-grow-1 chat-user-box">
+                                                    <p class="user-title m-0">Kelvin Thuku</p>
+                                                    <p class="text-muted">Amani Primary School</p>
+                                                </div>
+
+                                            </a>
+
+                                            <a href="javascript: void(0);" class="d-flex px-3 pb-2">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <img class="rounded-circle" src="assets/images/users/avatar-4.jpg" alt="Generic placeholder image" height="36">
+                                                </div>
+                                                <div class="flex-grow-1 chat-user-box">
+                                                    <p class="user-title m-0">Veronicah Wanja</p>
+                                                    <p class="text-muted">Amani Primary School</p>
+                                                </div>
+
+                                            </a>
+                                           
+                                        </div>
+                                        
+                                    </div>
+
+                                   
+                                </div>
+
+                                <label class="text-capitalize text-muted mb-4">Account you are sending the money to</label>
+                                <div class="mb-4" data-simplebar style="">
+                                    <a href="javascript: void(0);" class="d-flex px-3 pb-3 pl-0 align-items-center">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img class="rounded-circle avatar-sm" src="assets/images/blink-accounts/wallet.svg" alt="Generic placeholder image" >
+                                        </div>
+                                        <div class="flex-grow-1 chat-user-box">
+                                            <p class="user-title m-0 text-uppercase font-14px">Pocket Money</p>
+                                        </div>                                                            
+                                    </a>
+
+                                    <a href="javascript: void(0);" class="d-flex px-3 pb-3 pl-0 align-items-center">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img class="rounded-circle avatar-sm" src="assets/images/blink-accounts/school-fees.svg" alt="Generic placeholder image" >
+                                        </div>
+                                        <div class="flex-grow-1 chat-user-box">
+                                            <p class="user-title m-0 text-uppercase font-14px">School fees</p>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="javascript: void(0);" class="d-flex px-3 pb-3 pl-0 align-items-center">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img class="rounded-circle avatar-sm" src="assets/images/blink-accounts/transport.svg" alt="Generic placeholder image" >
+                                        </div>
+                                        <div class="flex-grow-1 chat-user-box">
+                                            <p class="user-title m-0 text-uppercase font-14px">Transport</p>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="javascript: void(0);" class="d-flex px-3 pb-3 pl-0 align-items-center">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img class="rounded-circle avatar-sm" src="assets/images/blink-accounts/savings.svg" alt="Generic placeholder image" >
+                                        </div>
+                                        <div class="flex-grow-1 chat-user-box">
+                                            <p class="user-title m-0 text-uppercase font-14px">Savings</p>
+                                        </div>
+
+                                    </a>
+                                   
+                                </div>
+
+                                <label for="" class="text-capitalize">Amount to send</label>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control font-21 text-info form-control-lg" id="amount-input" placeholder="Enter Name">
+                                    <label for="amount-input">KES</label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary d-none" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary d-none">Save changes</button>
+                    <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light">View More <i class="mdi mdi-arrow-right ms-1"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- end of wallet top up modal -->
 
 
 
