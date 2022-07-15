@@ -778,11 +778,13 @@
             }
             
             body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul ul {
-                background-color: #0e132c;
+                background-color: #212529;
+               
             }
             
+            
             body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
-                background: #2f324e;
+                background: #262626;
                 color: #fff
             }
             
@@ -1113,4 +1115,11 @@
                 div.dt-buttons {
                     width: auto;
                 }
+            }
+
+            .absolute-left-0{
+                left: 0 !important;
+            }
+            .absolute-right-auto{
+                right: auto !important;
             }
