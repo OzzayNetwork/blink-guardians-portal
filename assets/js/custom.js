@@ -60,6 +60,19 @@ $(window).on('load', function() {
                 theColumn.prop('checked', false);
             });
         }
+    });
+
+    //sending payment
+    $('body').on('click','.payment-next', function(){
+        
+        $('.payment-panel-parent').find('.payment-active-panel').addClass('d-none').removeClass('payment-active-panel').next().removeClass('d-none').addClass('payment-active-panel')
+
+    })
+
+    $('body').on('click','.payment-prev', function(){
+        
+        $('.payment-panel-parent').find('.payment-active-panel').addClass('d-none').removeClass('payment-active-panel').prev().removeClass('d-none').addClass('payment-active-panel')
+
     })
 
 });

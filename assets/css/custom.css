@@ -1126,6 +1126,9 @@
             .bg-primary-blink{
                 background-color: #ec5b0e !important;
             }
+            .text-blink-primary{
+                color: #ec5b0e !important;
+            }
             .expenditure-card{
                 height: calc(100% - 23px);
             }
@@ -1145,4 +1148,55 @@
                 }
                 #member-salary-chart .apexcharts-tooltip { 
                     background: white;
-                } ...
+                }
+
+                .blink-card {
+                   
+                   
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(35px);
+                    border: 2px solid rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+                    
+                    overflow: hidden;
+                    
+                  }
+
+                  .blink-card.card-body{
+                    border-radius: 20px;
+                    /* padding: 30px 30px 30px 30px; */
+                  }
+                  .border-radius-20{
+                    border-radius:15px !important;
+                  }
+                  .blink-card-bg{
+                    background-image: url("../images/card-bg.jpg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    backdrop-filter: blur(35px);
+                    position: relative;
+                  }
+
+                  .blink-card-bg::before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    /* background-color: orangered; */
+                    content: "";
+                    z-index: -1;
+                    background-image: linear-gradient(to right, #ee6b20c4, #f9000085);
+                    backdrop-filter: blur(17px);
+                  }
+                  .flip-x{
+                    transform: scaleX(-1) !important;
+                  }
+
+                  .acount-type a:hover, .acount-type a.active{
+                    background-color: #ffe5b9;
+                    position: relative;
+                  }
+                  .acount-type a.active::before{
+                    
+                  }
