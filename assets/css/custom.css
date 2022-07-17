@@ -1197,6 +1197,9 @@
                     background-color: #ffe5b9;
                     position: relative;
                   }
+                  .btn-send div{
+                    display: flex;
+                  }
                   .acount-type a.active::before{
                     
                   }

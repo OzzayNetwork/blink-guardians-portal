@@ -308,14 +308,14 @@
 
         <!-- wallet top up modal -->
         <!-- Modal -->
-            <div class="modal fade" id="walletTopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="walletTopUp" tabindex="-1" role="dialog" aria-bs-labelledby="exampleModalCenterTitle" aria-bs-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header d-none">
                         <span class="badge badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Send Money</span>
                        
                             
-                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle close-modal" data-bs-dismiss="modal" aria-label="Close">
                             <span class="avatar-title bg-transparent text-reset font-18px">
                                 <i class="bx bx-x"></i>
                             </span>
@@ -327,7 +327,7 @@
                             <span class="badge  badge-soft-success text-uppercase badge font-12px bg-primary-blink text-white">Send Money</span>
                        
                             
-                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="btn btn-light position-relative p-0 avatar-xs rounded-circle pull-right close-modal" data-bs-dismiss="modal" aria-label="Close">
                             <span class="avatar-title bg-transparent text-reset font-18px">
                                 <i class="bx bx-x"></i>
                             </span>
@@ -611,10 +611,36 @@
                                         </div>
                                     </div>
     
-                                    <p class="text-muted mt-4 mb-0 pb-0">A payment request of <strong class="text-black">KES 300</strong> will be sent to your <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Money</strong> button bellow. 
-                                        <br>
-                                        <br>
-                                        Remember to <strong class="text-black">Check your phone</strong> to confirm payment by entering your Mpesa pin.</p>
+                                    <div class="mpesa-confirmation ">
+                                        <p class="text-muted mt-4">A payment request of <strong class="text-black">KES 300</strong> will be sent to your <strong class="text-black">phone number (0704549859)</strong> soon after you click the <strong class="text-black text-capitalize">Send Money</strong> button bellow. 
+                                            <br>
+                                            <br>
+                                            Remember to <strong class="text-black">Check your phone</strong> to confirm payment by entering your Mpesa pin.</p>
+
+                                            <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect btn-send waves-light text-center w-100">
+                                                <div class="d-flex justify-content-center align-items-center"> 
+                                                    <div class="stk-timer-container d-none justify-content-center align-items-center">
+                                                        <span class="mdi mdi-timer-outline font-16px"></span>
+                                                        <span class="stk-timer px-2"></span>
+                                                    </div>
+                                                    <div class="justify-content-center align-items-center d-flex">
+                                                        <span class="px-2">Send Money</span> 
+                                                        <div class="flip-x"><i class="mdi mdi-reply ms-3 font-16px"></i></div>
+                                                    </div>
+
+                                                </div>
+                                             </button>
+                                    </div>
+
+                                    <div class="my-wallet-confirmation d-none">
+                                        <p class="text-muted mt-4 "><strong class="text-uppercase text-black">KES 300</strong> will be deducted from your guardian blink wallet and amount will be credited to <strong class="text-capitalize text-black">Alex's pocket money account</strong>.</p>
+                                        <p class="text-muted">confirm transaction by clicking the <strong class="text-capitalize text-black">send money</strong> button.</p>
+                                        
+                                        <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center w-100">
+                                            <div class="d-flex justify-content-center align-items-center"> <span class="mx-2">Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
+                                         </button>
+
+                                    </div>
     
                                     
                                 </div>
@@ -684,7 +710,7 @@
                         </div>
                     </div>
                     <div class="modal-footer d-flex">
-                        <button href="javascript: void(0);" class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
+                        <button href="javascript: void(0);" disabled class="btn btn-outline-light waves-effect waves-light payment-prev"> <i class="mdi mdi-arrow-left ms-1"></i> Previouse </button>
                         <button href="javascript: void(0);" class="btn btn-primary waves-effect waves-light payment-next">Next <i class="mdi mdi-arrow-right ms-1"></i></button>
                         <button href="javascript: void(0);" class="btn btn-primary btn-flex flex-grow-1 waves-effect waves-light text-center d-none">
                            <div class="d-flex justify-content-center align-items-center"> <span>Send Money</span> <div class="flip-x"><i class="mdi mdi-reply flip-x ms-3 font-16px"></i></div></div>
